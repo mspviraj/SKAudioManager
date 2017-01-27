@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SKAudioManager"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "A custom Audio Manager and player."
 
   # This description is used to generate tags and improve search results.

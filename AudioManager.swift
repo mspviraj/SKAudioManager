@@ -314,7 +314,11 @@ public class CustomAudioManager: NSObject {
 			return self.index
 		}
 	}
-    
+
+	public func cleanAudioPlayer() {
+		CustomAudioPlayer.shared.cleanPlayer()
+	}
+
     func downloadAndPlayAudio(_ timeOut: Int, handler: @escaping (_ hasErrors: Bool) -> Void) {
         CustomAudioPlayer.shared.downloadAndPlayAudio(CustomAudioManager.shared.audios[CustomAudioManager.shared.index], timeOut: timeOut, handler: handler)
     }
